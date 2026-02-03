@@ -1,0 +1,141 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+     grid-template-rows: repeat(12, 1fr);
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    margin: 0;
+}
+
+.card{
+    border: solid black;
+    grid-column: 4 / 10;
+    grid-row: 5 / 8;
+}
+
+/* styling box 1 icehockey */
+.box-1-ice-hockey{
+    background-color: pink;
+    grid-column: 5 / 8;
+    grid-row: 2 / 4;
+    opacity: 0;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.box-1-ice-hockey h3{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+.box-1-ice-hockey p{
+    text-align: right;
+}
+
+.box-1-ice-hockey img{
+    width: 100%;
+}
+
+.box-1-ice-hockey:hover{
+   opacity: 1;
+   transition: 0.3s ease-in;
+}
+
+/* styling box 2 birthdate */
+.box-2-birthdate{
+    background-color: purple;
+    grid-column: 10 / 11;
+    grid-row: 3 / 4;
+    opacity: 0;
+}
+
+.box-2-birthdate img{
+    width: 100%;
+}
+
+.box-2-birthdate:hover{
+   opacity: 1;
+   transition: 0.5s ease-in-out;
+}
+
+/* styling box 3 more */
+.box-3-more{
+    background-color: lightgreen;
+    grid-column: 2 / 3;
+    grid-row: 8 / 9;
+    opacity: 0;
+}
+
+.box-3-more:hover{
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+/* styling box 4 travel */
+.box-4-travel{
+    background-color: yellow;
+    grid-column: 9 / 11;
+    grid-row: 9 / 11;
+    opacity: 0;
+}
+
+.box-4-travel:hover{
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.box-4-travel img{
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0;
+}
+
+/* styling box 5 car */
+.box-5-car{
+    background-color: grey;
+    grid-column: 3 / 6;
+    grid-row: 11 / 12;
+    opacity: 0;
+    position: relative;
+}
+
+.box-5-car h3,p{
+    position: relative;
+}
+.box-5-car img{
+    position: absolute;
+    width: 100%;
+}
+.box-5-car:hover{
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+/* styling box 6 place */
+.box-6-place{
+    background-color: brown;
+    grid-column: 7 / 9;
+    grid-row: 12 / 13;
+    opacity: 0;
+    position: relative;
+}
+
+.box-6-place img{
+    width: 100%;
+    position: absolute;
+}
+
+.box-6-place h3,p{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+.box-6-place:hover{
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
